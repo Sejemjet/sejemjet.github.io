@@ -7,14 +7,19 @@ layout: compress
 <html>
 
 <head>
-  {% include _head.html %}
+    {% include _head.html %}
 </head>
 
 <body>
-  {% include _header.html %}
-  {{ content }}
-  {% include _footer.html %}
-  {% include _scripts.html %}
+    <div id="gradient" />
+    {% include _header.html %}
+    <main>
+        {{ content }}
+    </main>
+    <footer>
+        {% include _footer.html %}
+    </footer>
+    {% include _scripts.html %}
 </body>
 
 </html>
