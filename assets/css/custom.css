@@ -9,23 +9,34 @@
 
 /*-- Principal elements -----------------------*/
 header {
-    position: fixed;
     top: 0;
-    width: 100%;
-    height: 3rem;
+    background-color: #111111;
 }
 
 main {
-    margin-bottom: 100px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 footer {
-    position: fixed;
     bottom: 0;
-    width: 100vw;
-    height: 100px;
-    background-color:#FF8357;
-    z-index: -1;
+    height: 3rem;
+    background-color: #111111;
+}
+
+a {
+    font-weight: 800;
+    color: #FF8C00;
+}
+
+a:hover {
+    color: #FFA500;
+}
+
+#logo {
+    float: left;
+    margin-right: 10px;
+    width: 3rem;
 }
 
 /*-- Gradient background ----------------------*/
@@ -33,6 +44,9 @@ footer {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to top right, #abbaab 0%, #ffffff 100%);
+    background: linear-gradient(135deg, #333333, #434343);
+    background: -webkit-linear-gradient(135deg, #333333, #434343);
+    background: -moz-linear-gradient(135deg, #333333, #434343);
+    background: -o-linear-gradient(135deg, #333333, #434343);
     z-index: -1;
 }
