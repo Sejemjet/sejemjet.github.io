@@ -1,5 +1,5 @@
 /*-- Fonts ------------------------------------*/
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 
 * {
     margin: 0;
@@ -10,12 +10,19 @@
 /*-- Principal elements -----------------------*/
 header {
     top: 0;
-    background-color: #111111;
+    background-color: #010101;
 }
 
 main {
     margin-top: 3rem;
     margin-bottom: 3rem;
+}
+
+.main-content {
+    background-color: #444444;
+    box-shadow: 1px 1px 5px 3px #000000;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 footer {
@@ -39,14 +46,31 @@ a:hover {
     width: 3rem;
 }
 
+.video {
+    margin-bottom: 16px;
+}
+
+.nav-pills > li.nav-item > a.active {
+    color:#000000;
+    background-color:#FF8C00;
+}
+
 /*-- Gradient background ----------------------*/
 #gradient {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(135deg, #333333, #434343);
-    background: -webkit-linear-gradient(135deg, #333333, #434343);
-    background: -moz-linear-gradient(135deg, #333333, #434343);
-    background: -o-linear-gradient(135deg, #333333, #434343);
+    background: linear-gradient(135deg, #040404, #434343);
+    background: -webkit-linear-gradient(135deg, #040404, #434343);
+    background: -moz-linear-gradient(135deg, #040404, #434343);
+    background: -o-linear-gradient(135deg, #040404, #434343);
     z-index: -1;
+}
+
+/*-- Custom togler ----------------------------*/
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255,140,0);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,140,0, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
